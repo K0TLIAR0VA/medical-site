@@ -16,7 +16,7 @@
           </li>
           <!--присвоить class="active" -->
           <li>
-            <a href="/about" class="hvr-sweep-to-bottom">Послуги</a>
+            <a href="/about" class="hvr-sweep-to-bottom">Про себе</a>
           </li>
           <li>
             <a href="/blog" class="hvr-sweep-to-bottom">Блог</a>
