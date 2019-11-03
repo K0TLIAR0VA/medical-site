@@ -34,7 +34,7 @@
 header {
   background: url(/img/1.jpg) no-repeat;
   background-size: cover;
-  height: 83vh;
+  height: 100vh;
 }
 .container {
   display: flex;
