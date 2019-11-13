@@ -13,7 +13,7 @@
 
 <style scoped>
 footer {
-  height: 17vh;
+  height: 25vh;
   background: #7d3f98;
 }
 .container {

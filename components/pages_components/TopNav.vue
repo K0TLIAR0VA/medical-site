@@ -4,22 +4,19 @@
       <p class="icon">
         <i class="fas fa-user-md"></i>
       </p>
-      <h3>Contrary to popular</h3>
-      <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45</p>
+      <h3>Link</h3>
     </div>
     <div class="col">
       <p class="icon">
         <i class="fas fa-user-md"></i>
       </p>
-      <h3>Contrary to popular</h3>
-      <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45</p>
+      <h3>Link</h3>
     </div>
     <div class="col">
       <p class="icon">
         <i class="fas fa-user-md"></i>
       </p>
-      <h3>Contrary to popular</h3>
-      <p>Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45</p>
+      <h3>Link</h3>
     </div>
   </div>
 </template>
@@ -34,12 +31,13 @@
 .col {
   width: 33%;
   margin-right: 1%;
-  min-height: 350px;
-  padding: 20px 50px 0;
+  min-height: 300px;
+  padding: 65px 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-size: 60px;
 }
 .col:last-child {
   margin-right: 0;

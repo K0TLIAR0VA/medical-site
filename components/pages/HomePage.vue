@@ -2,7 +2,7 @@
   <div>
     <Header></Header>
     <div class="container">
-      <ContentTop></ContentTop>
+      <TopNav></TopNav>
     </div>
     <Footer></Footer>
   </div>
@@ -11,13 +11,9 @@
 <script>
 import Header from "../pages_components/Header.vue";
 import Footer from "../pages_components/Footer.vue";
-import ContentTop from "../pages_components/ContentForHomePage1.vue";
+import TopNav from "../pages_components/TopNav.vue";
 export default {
-  components: {
-    Header: Header,
-    Footer: Footer,
-    ContentTop: ContentTop
-  }
+  components: { Header, Footer, TopNav }
 };
 </script>
 
