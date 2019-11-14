@@ -3,7 +3,7 @@
     <div class="container">
       <img src="/img/logo/logo-white-with-title_v1.png" alt />
       <div class="footer-text">
-        <p>&copy; 2019 Особистий сайт лікаря Погорєлова Д.О.</p>
+        <p>&copy; 2019 Особистий сайт лікаря-гінеколога Погорєлова Д.О.</p>
         <p>Всі права захищено.</p>
         <small>Developed by Kateryna Kotliarova</small>
       </div>
