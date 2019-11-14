@@ -10,6 +10,7 @@ import AboutPage from './pages/AboutPage.vue';
 import BlogPage from './pages/BlogPage.vue';
 import ContactPage from './pages/ContactPage.vue';
 import NotFoundPage from './pages/NotFoundPage.vue';
+import Post1 from './pages/blog/Post1.vue';
 
 export default {
   data: () => ({
@@ -19,6 +20,7 @@ export default {
       '/about': AboutPage,
       '/blog': BlogPage,
       '/contacts': ContactPage,
+      '/post1': Post1
     }
   }),
 

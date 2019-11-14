@@ -1,77 +1,128 @@
 <template>
   <div class="blog container">
-    <div class="col">
-      <div class="post" v-for="post_first in posts_first" :key="post_first.id">
-        <h2>{{post_first.title}}</h2>
-        <div class="img"><img :src="post_first.picture" /></div>
-        <p>{{post_first.text}}</p>
-        <a :href="post_first.href">Читати більше...</a>
+    <article class="post" v-for="post in posts" :key="post.id">
+      <img :src="post.picture" />
+      <div class="post-text">
+        <h2>{{post.title}}</h2>
+        <p>{{post.text}}</p>
+        <a :href="post.href">Читати більше <i class="fas fa-arrow-right"></i></a>
       </div>
-    </div>
-    <div class="col">
-      <div class="post" v-for="post_second in posts_second" :key="post_second.id">
-        <h2>{{post_second.title}}</h2>
-        <div class="img"><img :src="post_second.picture" /></div>
-        <p>{{post_second.text}}</p>
-        <a :href="post_second.href">Читати більше...</a>
-      </div>
-    </div>
-    <div class="col">
-      <div class="post" v-for="post_third in posts_third" :key="post_third.id">
-        <h2>{{post_third.title}}</h2>
-        <div class="img"><img :src="post_third.picture" /></div>
-        <p>{{post_third.text}}</p>
-        <a :href="post_third.href">Читати більше...</a>
-      </div>
-    </div>
+    </article>
   </div>
 </template>
 
 <script>
 export default {
   data: () => ({
-    posts_first: [
+    posts: [
       {
         title: "Як часто треба відвідувати гінеколога?",
         picture: require("/img/blog/blog_1.jpg"),
-        text: "Всі знають, що гінеколога треба відвідувати щороку. Деякі лікарі хотіли б бачитися з вами частіще: їм за це платять :) Але навіщо це вам?.."
-      }
-    ],
-    posts_second: [
+        text:
+          "Всі знають, що гінеколога треба відвідувати щороку. Деякі лікарі хотіли б бачитися з вами частіще: їм за це платять :) Але навіщо це вам?",
+        href: "/post1"
+      },
       {
-        title: "Як часто треба відвідувати гінеколога?",
-        picture: require("/img/blog/blog_1.jpg"),
-        text: "Всі знають, що гінеколога треба відвідувати щороку. Деякі лікарі хотіли б бачитися з вами частіще: їм за це платять :) Але навіщо це вам?.."
-      }
-    ],
-    posts_third: [
+        title: "Lorem Ipsum is not simply",
+        picture: require("/img/blog/blog_2.jpg"),
+        text:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has ",
+        href: "#"
+      },
       {
-        title: "Як часто треба відвідувати гінеколога?",
+        title: "Lorem Ipsum is not simply. Lorem Ipsum is not simply",
+        picture: require("/img/blog/blog_3.jpg"),
+        text:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+        href: "#"
+      },
+      {
+        title: "Lorem Ipsum is not simply",
+        picture: require("/img/blog/blog_4.jpg"),
+        text:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+        href: "#"
+      },
+      {
+        title: "Lorem Ipsum is not simply not simply",
+        picture: require("/img/blog/blog_5.jpg"),
+        text:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+        href: "#"
+      },
+      {
+        title: "Lorem Ipsum is not simply simply",
+        picture: require("/img/blog/blog_6.jpg"),
+        text:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+        href: "#"
+      },
+      {
+        title: "Lorem Ipsum is not simply",
         picture: require("/img/blog/blog_1.jpg"),
-        text: "Всі знають, що гінеколога треба відвідувати щороку. Деякі лікарі хотіли б бачитися з вами частіще: їм за це платять :) Але навіщо це вам?.."
+        text:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+        href: "#"
+      },
+      {
+        title: "Lorem Ipsum is not simply",
+        picture: require("/img/blog/blog_1.jpg"),
+        text:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+        href: "#"
+      },
+      {
+        title: "Lorem Ipsum is not simply",
+        picture: require("/img/blog/blog_1.jpg"),
+        text:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr",
+        href: "#"
+      },
+      {
+        title: "Lorem Ipsum is not simply",
+        picture: require("/img/blog/blog_1.jpg"),
+        text:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+        href: "#"
+      },
+      {
+        title: "Lorem Ipsum is not simply",
+        picture: require("/img/blog/blog_1.jpg"),
+        text:
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy",
+        href: "#"
       }
     ]
   })
-}
+};
 </script>
 
 <style lang="sass" scoped>
 .blog
   border: red 1px solid
   margin-bottom: 50px
+  height: 2300px
   display: flex
-  .col
-    width: 33%
-    h2, .img, p, a
-      width: 85%
-      margin: 0 auto 20px
-      display: block
-    h2
-      text-align: center
-      font-size: 2em
-    .img img
+  flex-flow: column wrap
+  .post
+    width: 30%
+    border: 1px solid #BEBEBE
+    margin: 0 1.66666666666666% 40px
+    img
       width: 100%
-  .col:first-child, .col:nth-child(2)
-    margin-right: .5%
+    .post-text
+      padding: 20px
+      h2
+        text-align: center
+        font-size: 2em
+        color: #7d3f98
+      a
+        color: #fff
+        display: inline-block
+        background: #7D3F98
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+        padding: 1em
+      h2, p
+        margin-bottom: 20px
     
 </style>

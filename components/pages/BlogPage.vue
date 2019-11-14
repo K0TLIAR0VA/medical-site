@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header style="height: 50vhC"></Header>
+    <Header style="height: 50vh"></Header>
     <TopNav></TopNav>
     <Blog></Blog>
     <Footer></Footer>
