@@ -5,7 +5,7 @@
       <div class="footer-text">
         <p>&copy; 2019 Особистий сайт лікаря-гінеколога Погорєлова Д.О.</p>
         <p>Всі права захищено.</p>
-        <small>Developed by Kateryna Kotliarova</small>
+        <small>Developed by Kateryna</small>
       </div>
     </div>
   </footer>

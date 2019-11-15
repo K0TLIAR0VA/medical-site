@@ -26,6 +26,7 @@
           </li>
         </ul>
       </div>
+      <div class="title"><h1 class="violet">Лікар-гінеколог Погорєлов <br> Дмитро Олександрович</h1></div>
     </div>
   </header>
 </template>
@@ -35,6 +36,7 @@ header {
   background: url(/img/1.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 .container {
   display: flex;
@@ -99,4 +101,14 @@ header {
 .hvr-sweep-to-bottom:active:before {
   transform: scaleY(1);
 }
+
+h1 {
+  position: absolute;
+  font-size: 80px;
+  width: 40%;
+  top: 30%;
+  right: 10%;
+  font-weight: 900;
+}
+
 </style>
