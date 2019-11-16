@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header></Header>
+    <Header style="height: 100vh"></Header>
     <div class="container">
       <TopNav></TopNav>
     </div>
