@@ -6,9 +6,8 @@
 import Router from './Router.vue';
 
 import HomePage from './pages/HomePage.vue';
-import AboutPage from './pages/AboutPage.vue';
+import ProdactsPage from './pages/ProdactsPage.vue';
 import BlogPage from './pages/BlogPage.vue';
-import ContactPage from './pages/ContactPage.vue';
 import NotFoundPage from './pages/NotFoundPage.vue';
 import Post1 from './pages/blog/Post1.vue';
 
@@ -17,9 +16,8 @@ export default {
     routes: {
       default: NotFoundPage,
       '/': HomePage,
-      '/about': AboutPage,
+      '/prodacts': ProdactsPage,
       '/blog': BlogPage,
-      '/contacts': ContactPage,
       '/post1': Post1
     }
   }),

@@ -5,7 +5,7 @@
       <div class="post-text">
         <h2>{{post.title}}</h2>
         <p>{{post.text}}</p>
-        <a :href="post.href">Читати більше <i class="fas fa-arrow-right"></i></a>
+        <a :href="post.href" class="white">Читати більше <i class="fas fa-arrow-right"></i></a>
       </div>
     </article>
   </div>
@@ -99,7 +99,6 @@ export default {
 
 <style lang="sass" scoped>
 .blog
-  border: red 1px solid
   margin-bottom: 50px
   height: 2300px
   display: flex
@@ -117,7 +116,6 @@ export default {
         font-size: 2em
         color: #7d3f98
       a
-        color: #fff
         display: inline-block
         background: #7D3F98
         box-shadow: 0 0 1px rgba(0, 0, 0, 0)

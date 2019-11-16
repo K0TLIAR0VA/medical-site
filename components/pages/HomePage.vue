@@ -1,9 +1,7 @@
 <template>
   <div>
     <Header style="height: 100vh"></Header>
-    <div class="container">
-      <TopNav></TopNav>
-    </div>
+    <TopNav></TopNav>
     <About></About>
     <Contacts></Contacts>
     <Footer></Footer>

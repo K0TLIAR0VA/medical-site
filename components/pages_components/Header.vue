@@ -16,13 +16,13 @@
           </li>
           <!--присвоить class="active" -->
           <li>
-            <a href="/about" class="link">Про себе</a>
+            <a href="/prodacts" class="link">Послуги</a>
           </li>
           <li>
             <a href="/blog" class="link">Блог</a>
           </li>
           <li>
-            <a href="/contact" class="link">Контакти</a>
+            <a href="#contacts" class="link">Контакти</a>
           </li>
         </ul>
       </div>
