@@ -1,102 +1,82 @@
 <template>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <a href="/">
-          <img src="/img/logo/logo-white-with-title_v1.png" alt />
-        </a>
-      </div>
-      <div class="top-nav">
-        <span class="menu">
-          <img src="/img/icon/menu.png" alt />
-        </span>
-        <ul>
-          <li>
-            <a href="/" class="link">Головна</a>
-          </li>
-          <!--присвоить class="active" -->
-          <li>
-            <a href="/prodacts" class="link">Послуги</a>
-          </li>
-          <li>
-            <a href="/blog" class="link">Блог</a>
-          </li>
-          <li>
-            <a href="#contacts" class="link">Контакти</a>
-          </li>
-        </ul>
-      </div>
-      <div class="title"><h1 class="violet">Лікар-гінеколог Погорєлов <br> Дмитро Олександрович</h1></div>
+  <header class="fullscreen-bg">
+    <div class="overlay">
+      <img src="/img/logo/logo-white-with-title_v1.png" alt class="logo" />
+      <Navigation></Navigation>
+      <div class="title-border-top"></div>
+      <h1>
+        Погорєлов
+        <br />Дмитро Олександрович
+        <br />
+        <span>Лікар-гінеколог</span>
+      </h1>
+      <div class="title-border-bottom"></div>
+      <a href="/blog">la-la</a>
     </div>
+    <!-- Video -->
+    <video loop muted autoplay class="fullscreen-bg__video">
+      <source src="/video/plane.mp4" type="video/mp4" />
+    </video>
   </header>
 </template>
 
-<style scoped>
-/*
-
-
-
-*/
-</style>
-
 <style lang="sass" scoped>
-header
-  background: url(/img/1.jpg) no-repeat
-  background-size: cover
+.fullscreen-bg
+  overflow: hidden
   position: relative
-  .container
-    display: flex
-    justify-content: space-between
-    .logo a
-      background: url(/img/log.png) bottom no-repeat
-      width: 240px
-      height: 204px
+  height: 100vh
+  width: 100%
+  padding-top: 45%
+  .fullscreen-bg__video 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+  .overlay
+    background: rgba(0, 0, 0, 0.6)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 4
+    padding: 40px 0
+    .logo
       display: block
+      margin: 0 auto
+      padding-bottom: 70px
+    .title-border-top, .title-border-bottom
+      width: 550px
+      height: 50px
+      border: 3px solid #fff
+      margin: 0 auto
+    .title-border-top
+      margin-top: 80px
+      border-bottom: none
+    .title-border-bottom
+      border-top: none
+    h1
+      color: #fff
+      font-size: 68px
       text-align: center
-      padding: 1.7em 0 0
-    .top-nav .menu
-      display: none
-    .top-nav ul
-      display: flex
-      li a
-        font-size: 1.2em
-        display: block
-        padding: 1.6em 1em
-        text-align: center
-        color: #ffffff
-        display: inline-block
-        vertical-align: middle
-        transform: translateZ(0)
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0)
-        backface-visibility: hidden
-        position: relative
-        transition-property: color
-        transition-duration: 0.3s
-      li a:before
-        content: ""
-        position: absolute
-        z-index: -1
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        background: #00bce4
-        transform: scaleY(0)
-        transform-origin: 50% 0
-        transition-property: transform
-        transition-duration: 0.3s
-        transition-timing-function: ease-out
-      li a:hover, li a:focus, li a:active
-        color: #fff
-      li a:hover:before, li a:focus:before, li a:active:before
-        transform: scaleY(1)
-      li.active a
-        background: #00bce4
-    .title
-      position: absolute
-      font-size: 80px
-      width: 40%
-      top: 30%
-      right: 10%
-      font-weight: 900
+      margin: 30px 0
+      line-height: 1.2em
+      span
+        font-size: 36px
+
+
+@media (max-width: 767px)
+  .fullscreen-bg
+    /*background: url('../images/plane.jpg') center center / cover no-repeat;*/
+
+  .fullscreen-bg__video
+    display: none
+
 </style>
+
+<script>
+import Navigation from './Navigation.vue';
+export default {
+  components: {Navigation}
+}
+</script>
