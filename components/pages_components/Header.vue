@@ -59,11 +59,28 @@
       color: #fff
       font-size: 68px
       text-align: center
-      margin: 30px 0
+      margin: 8px 0
       line-height: 1.2em
+      background: rgba(255, 255, 255, 0.2)
+      display: block
+      font-weight: 900
+      padding: 15px 0
       span
         font-size: 36px
 
+@media (max-width: 1440px)
+  .fullscreen-bg .overlay 
+    .logo
+      padding-bottom: 30px
+    .title-border-top, .title-border-bottom
+      height: 30px
+    .title-border-top
+      margin-top: 30px
+    h1
+      //margin: 15px 0
+      
+      
+      
 
 @media (max-width: 767px)
   .fullscreen-bg
